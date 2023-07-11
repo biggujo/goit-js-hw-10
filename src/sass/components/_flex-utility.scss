@@ -1,0 +1,8 @@
+.flex-utility {
+  display: flex;
+  gap: 20px;
+
+  &__column-like {
+    flex-direction: column;
+  }
+}
