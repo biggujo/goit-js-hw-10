@@ -7,10 +7,33 @@
     <title>Homework 10</title>
   </head>
   <body>
-    <select class='breed-select'></select>
-    <p class='loader'>Loading data, please wait...</p>
-    <p class='error'>Oops! Something went wrong! Try reloading the page!</p>
-    <div class='cat-info'></div>
+    <main>
+      <div class='container flex-utility flex-utility__column-like'>
+        <div class='row'>
+          <select class='breed-select'>
+            <option value='1'>Text</option>
+          </select>
+          <p class='loader' hidden>Loading data, please wait...</p>
+          <p class='error' hidden>Oops! Something went wrong! Try reloading the
+            page!</p>
+        </div>
+        <div class='cat-info row'>
+          <div class='cat-info__column'>
+            <img src='https://placehold.co/100' alt='' width='400'>
+          </div>
+          <div class='cat-info__column'>
+            <h2 class='cat-info__title'>Test</h2>
+            <p class='cat-info__text'>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Accusantium, animi at delectus deleniti deserunt
+              dolorem dolores ducimus ea eaque enim esse est excepturi explicabo
+              hic id in ipsam ipsum libero maxime molestias mollitia nesciunt
+              non numquam odio optio perferendis quas qui quidem ratione
+              repellendus reprehenderit sequi suscipit tempora totam
+              voluptas.</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src='index.js' type='module'></script>
   </body>
