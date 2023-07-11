@@ -1,0 +1,7 @@
+.container {
+  padding-inline: 15px;
+
+  @media screen and (width > 768px) {
+    padding-inline: 30px;
+  }
+}
