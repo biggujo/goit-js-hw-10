@@ -12,8 +12,5 @@ export function fetchBreeds() {
     }
 
     return response.data;
-  })
-  .then((breeds) => {
-    return breeds.map(({ name }) => name);
   });
 }
