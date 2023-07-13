@@ -15,7 +15,7 @@ export function fetchBreeds() {
   });
 }
 
-function fetchCatImageByBreed(breedId) {
+export function fetchCatByBreed(breedId) {
   const parameters = new URLSearchParams({
     breed_ids: breedId,
   });
@@ -27,25 +27,5 @@ function fetchCatImageByBreed(breedId) {
     }
 
     return response.data;
-  });
-}
-
-export function fetchCatByBreed(breedId) {
-  fetchBreeds()
-  .then((breedArray) => {
-    fetchCatImageByBreed(breedId)
-    .then((image) => {
-      const breedIdInfo = breedArray.find(({ id }) => id === breedId);
-
-      console.log({
-        ...breedIdInfo,
-        image,
-      });
-
-      return {
-        ...breedIdInfo,
-        image,
-      };
-    });
   });
 }
