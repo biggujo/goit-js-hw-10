@@ -46,7 +46,10 @@ function fetchAllBreeds() {
   .then((breedsArray) => {
     setOptionsArray(createOptionsArray(breedsArray));
   })
-  .catch(({ message }) => Notify.failure(message));
+  .catch(({ message }) => {
+    Notify.failure(message);
+    refs.loader.hideLoader();
+  });
 }
 
 function createCatInfoMarkup([breedInfoById]) {
