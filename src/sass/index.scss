@@ -3,7 +3,10 @@
 
 @import "components/main";
 @import "components/cat-info";
-@import "components/flex-rows";
+@import "components/loader";
+
+@import "utility/flex-rows";
+@import "utility/is-hidden";
 
 @import "layout/containter";
 
