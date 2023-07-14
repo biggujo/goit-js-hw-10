@@ -1,5 +1,5 @@
 export default class Loader {
-  static #visuallyHiddenClass = 'visually-hidden';
+  #visuallyHiddenClass = 'visually-hidden';
   #loaderRef;
 
   constructor(refId) {
@@ -7,11 +7,11 @@ export default class Loader {
   }
 
   showLoader() {
-    this.loaderRef.classList.remove(Loader.#visuallyHiddenClass);
+    this.loaderRef.classList.remove(this.#visuallyHiddenClass);
   }
 
   hideLoader() {
-    this.loaderRef.classList.add(Loader.#visuallyHiddenClass);
+    this.loaderRef.classList.add(this.#visuallyHiddenClass);
   }
 
   get loaderRef() {
