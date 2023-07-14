@@ -17,6 +17,9 @@ const refs = {
   output: document.getElementById('cat-output'),
 };
 
+// Removes empty block from the page
+hideRenderCatInfoMarkup();
+
 fetchAllBreeds();
 
 function onBreedSelect([
