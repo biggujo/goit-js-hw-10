@@ -1,16 +1,17 @@
 export default class Loader {
+  static #visuallyHiddenClass = 'visually-hidden';
   #loaderRef;
 
-  constructor(ref) {
-    this.loaderRef = ref;
+  constructor(refId) {
+    this.loaderRef = document.getElementById(refId);
   }
 
   showLoader() {
-    this.loaderRef.hidden = false;
+    this.loaderRef.classList.remove(Loader.#visuallyHiddenClass);
   }
 
   hideLoader() {
-    this.loaderRef.hidden = true;
+    this.loaderRef.classList.add(Loader.#visuallyHiddenClass);
   }
 
   get loaderRef() {
