@@ -6,10 +6,6 @@
 @import "components/loader";
 
 @import "utility/flex-rows";
-@import "utility/is-hidden";
+@import "utility/visually-hidden";
 
 @import "layout/containter";
-
-* {
-  outline: 1px solid tomato;
-}
